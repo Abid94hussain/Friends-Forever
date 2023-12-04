@@ -8,7 +8,7 @@ body {
 }
 
 header {
-     height: 100vh;
+     height: 50vh;
 }
 
 .head {
@@ -20,9 +20,7 @@ header {
      align-items: center;
 }
 
-main {
-     height: 50vh;
-}
+
 
 .navigation ul {
      display: flex;
