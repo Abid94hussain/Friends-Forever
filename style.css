@@ -8,10 +8,11 @@ body {
 }
 
 header {
-     height: 15vh;
+     height: 50vh;
 }
 
 .head {
+     height: 10vh;
      background-color: rgb(162, 210, 255);
      position: sticky;
      top: 0px;
@@ -36,3 +37,7 @@ header {
      font-family: 'Times New Roman', Times, serif;
      color: white;
 }
+
+/* .slider {
+     height: 20vh;
+} */

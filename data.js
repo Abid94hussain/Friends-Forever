@@ -44,6 +44,74 @@ const data = {
                     img: "./assests/sazid7.jpg",
                },
           ]
+     },
+     Mujammil: {
+          name: "Mujammil",
+          image: [
+               {
+                    img: "./assests/mujammil21.jpg",
+               },
+               {
+                    img: "./assests/mujammil1.jpg",
+               },
+               {
+                    img: "./assests/mujammil2.jpg",
+               },
+               {
+                    img: "./assests/mujammil3.jpg",
+               },
+               {
+                    img: "./assests/mujammil4.jpg",
+               },
+               {
+                    img: "./assests/mujammil5.jpg",
+               },
+               {
+                    img: "./assests/mujammil6.jpg",
+               },
+               {
+                    img: "./assests/mujammil7.jpg",
+               },
+               {
+                    img: "./assests/mujammil8.jpg",
+               },
+               {
+                    img: "./assests/mujammil9.jpg",
+               },
+               {
+                    img: "./assests/mujammil10.jpg",
+               },
+               {
+                    img: "./assests/mujammil11.jpg",
+               },
+               {
+                    img: "./assests/mujammil12.jpg",
+               },
+               {
+                    img: "./assests/mujammil13.jpg",
+               },
+               {
+                    img: "./assests/mujammil14.jpg",
+               },
+               {
+                    img: "./assests/mujammil15.jpg",
+               },
+               {
+                    img: "./assests/mujammil16.jpg",
+               },
+               {
+                    img: "./assests/mujammil17.jpg",
+               },
+               {
+                    img: "./assests/mujammil18.jpg",
+               },
+               {
+                    img: "./assests/mujammil19.jpg",
+               },
+               {
+                    img: "./assests/mujammil20.jpg",
+               },
+          ]
      }
 };
 
@@ -69,4 +137,21 @@ submit.addEventListener("click", function () {
                images.src = data.Sazid.image[i].img;
           };
      };
+
+     if (inpt.value == "Mujammil") {
+          for (let i = 0; i < 21; i++) {
+               let imag = document.createElement("img");
+               let images = document.body.appendChild(imag);
+               images.setAttribute("class", "images");
+               images.src = data.Mujammil.image[i].img;
+          };
+     };
+     inpt.value = "";
 });
+
+const refreshBtn = document.getElementById("refreshBtn");
+
+refreshBtn.addEventListener("click", function(){
+     window.location.reload();
+});
+
