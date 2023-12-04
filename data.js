@@ -58,8 +58,8 @@ submit.addEventListener("click", function () {
                let images = document.body.appendChild(imag);
                images.setAttribute("class", "images");
                images.src = data.Abid.image[i].img;
-          }
-     }
+          };
+     };
 
      if (inpt.value == "Sazid") {
           for (let i = 0; i < 5; i++) {
@@ -67,6 +67,6 @@ submit.addEventListener("click", function () {
                let images = document.body.appendChild(imag);
                images.setAttribute("class", "images");
                images.src = data.Sazid.image[i].img;
-          }
-     }
+          };
+     };
 });

@@ -3,7 +3,38 @@
      padding: 0;
 }
 
-.images {
-     width: 95%;
-     margin: 2.5%;
+body {
+     background-color: rgb(255, 200, 221);
+}
+
+header {
+     height: 100vh;
+}
+
+.head {
+     background-color: rgb(162, 210, 255);
+     position: sticky;
+     top: 0px;
+     display: flex;
+     justify-content:flex-start;
+     align-items: center;
+}
+
+main {
+     height: 50vh;
+}
+
+.navigation ul {
+     display: flex;
+}
+
+.navigation ul li {
+     list-style: none;
+     margin-right: 1rem;
+}
+
+.navigation ul li a {
+     text-decoration: none;
+     font-family: 'Times New Roman', Times, serif;
+     color: white;
 }
