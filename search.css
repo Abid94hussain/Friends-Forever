@@ -278,3 +278,60 @@
           background-color: rgb(161, 208, 250);
      }
 }
+
+@media (max-width: 385px) {
+     .header {
+          height: 3rem;
+          width: 100%;
+          background-color: rgb(189, 224, 254);
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+     }
+
+     .search-icon {
+          position: absolute;
+          left: 1.5rem;
+     }
+     
+     #inpt1 {
+          height: 2rem;
+          width: 11.5rem;
+          margin: 0rem 1rem;
+          font-size: 1rem;
+          border: 3px solid white;
+          margin-left: 0.8rem;
+          padding-left: 2rem;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+
+     #submit {
+          position: absolute;
+          top: 0.5rem;
+          left: 11rem;
+          height: 2rem;
+          width: 4rem;
+          border: 3px solid rgb(33, 32, 32);
+          background-color: rgb(33, 32, 32);
+          color: white;
+          font-weight: 600;
+     }
+
+     #refreshBtn {
+          position: absolute;
+          top: 0.5rem;
+          left: 16rem;
+          height: 2rem;
+          width: 4rem;
+          border: 1px solid rgb(33, 32, 32);
+          color: white;
+          font-weight: 600;
+          background-color: rgb(189, 224, 254);
+          transition-duration: 0.3s;
+          transition-timing-function: ease-in;
+     }
+
+     #refreshBtn:hover {
+          background-color: rgb(161, 208, 250);
+     }
+}
