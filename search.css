@@ -11,7 +11,7 @@
 
 
 .header {
-     height: 4rem;
+     height: 5rem;
      width: 100%;
      background-color: rgb(189, 224, 254);
      display: flex;
@@ -19,13 +19,20 @@
      align-items: center;
 }
 
+.search-icon {
+     position: absolute;
+     left: 5rem;
+}
+
 #inpt1 {
-     height: 2.5rem;
-     width: 60%;
+     height: 3rem;
+     width: 50rem;
      margin: 0rem 1rem;
-     font-size: 2rem;
-     border: 2px solid white;
-     border-radius: 5px;
+     font-size: 1.8rem;
+     border: 3px solid white;
+     margin-left: 4rem;
+     padding-left: 4rem;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #inpt1:focus {
@@ -34,25 +41,131 @@
 
 #submit {
      position: absolute;
-     left: 52%;
-     top: 3%;
-     background-color: white;
-     border: 2px solid white;
+     top: 1rem;
+     left: 49rem;
+     height: 3rem;
+     width: 5rem;
+     border: 3px solid rgb(33, 32, 32);
+     background-color: rgb(33, 32, 32);
+     color: white;
+     font-weight: 600;
 }
 
 #refreshBtn {
      position: absolute;
-     left: 56%;
-     top: 3%;
-     background-color: white;
-     border: 2px solid white;
+     top: 1rem;
+     left: 58rem;
+     height: 3rem;
+     width: 5rem;
+     border: 1px solid rgb(33, 32, 32);
+     color: white;
+     font-weight: 600;
+     background-color: rgb(189, 224, 254);
+     transition-duration: 0.3s;
+     transition-timing-function: ease-in;
 }
 
-@media (max-width: 850px) {
+#refreshBtn:hover {
+     background-color: rgb(161, 208, 250);
+}
 
-     .alert {
-          height: 3rem;
+@media (max-width: 1010px) {
+     .search-icon {
+          position: absolute;
+          left: 5rem;
      }
+
+     #inpt1 {
+          height: 3rem;
+          width: 40rem;
+          margin: 0rem 1rem;
+          font-size: 1.8rem;
+          border: 3px solid white;
+          margin-left: 4rem;
+          padding-left: 4rem;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+
+     #submit {
+          position: absolute;
+          top: 1rem;
+          left: 39rem;
+          height: 3rem;
+          width: 5rem;
+          border: 3px solid rgb(33, 32, 32);
+          background-color: rgb(33, 32, 32);
+          color: white;
+          font-weight: 600;
+     }
+
+     #refreshBtn {
+          position: absolute;
+          top: 1rem;
+          left: 48rem;
+          height: 3rem;
+          width: 5rem;
+          border: 1px solid rgb(33, 32, 32);
+          color: white;
+          font-weight: 600;
+          background-color: rgb(189, 224, 254);
+          transition-duration: 0.3s;
+          transition-timing-function: ease-in;
+     }
+
+     #refreshBtn:hover {
+          background-color: rgb(161, 208, 250);
+     }
+}
+
+@media (max-width: 855px) {
+     .search-icon {
+          position: absolute;
+          left: 2rem;
+     }
+
+     #inpt1 {
+          height: 3rem;
+          width: 25rem;
+          margin: 0rem 1rem;
+          font-size: 1.8rem;
+          border: 3px solid white;
+          margin-left: 1rem;
+          padding-left: 4rem;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+
+     #submit {
+          position: absolute;
+          top: 1rem;
+          left: 24rem;
+          height: 3rem;
+          width: 5rem;
+          border: 3px solid rgb(33, 32, 32);
+          background-color: rgb(33, 32, 32);
+          color: white;
+          font-weight: 600;
+     }
+
+     #refreshBtn {
+          position: absolute;
+          top: 1rem;
+          left: 30rem;
+          height: 3rem;
+          width: 5rem;
+          border: 1px solid rgb(33, 32, 32);
+          color: white;
+          font-weight: 600;
+          background-color: rgb(189, 224, 254);
+          transition-duration: 0.3s;
+          transition-timing-function: ease-in;
+     }
+
+     #refreshBtn:hover {
+          background-color: rgb(161, 208, 250);
+     }
+}
+
+@media (max-width: 562px) {
      .header {
           height: 3rem;
           width: 100%;
@@ -62,32 +175,106 @@
           align-items: center;
      }
 
+     .search-icon {
+          position: absolute;
+          left: 2rem;
+     }
+     
      #inpt1 {
           height: 2rem;
-          width: 80%;
+          width: 18rem;
           margin: 0rem 1rem;
-          font-size: 2rem;
-          border: 2px solid white;
-          border-radius: 5px;
+          font-size: 1rem;
+          border: 3px solid white;
+          margin-left: 1rem;
+          padding-left: 3rem;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
      }
 
-     #inpt1:focus {
-          outline: none;
-     }
-     
      #submit {
           position: absolute;
-          left: 64%;
-          top: 1.4%;
-          background-color: white;
-          border: 2px solid white;
+          top: 0.5rem;
+          left: 17rem;
+          height: 2rem;
+          width: 4rem;
+          border: 3px solid rgb(33, 32, 32);
+          background-color: rgb(33, 32, 32);
+          color: white;
+          font-weight: 600;
      }
-     
+
      #refreshBtn {
           position: absolute;
-          left: 74%;
-          top: 1.4%;
-          background-color: white;
-          border: 2px solid white;
+          top: 0.5rem;
+          left: 22rem;
+          height: 2rem;
+          width: 4rem;
+          border: 1px solid rgb(33, 32, 32);
+          color: white;
+          font-weight: 600;
+          background-color: rgb(189, 224, 254);
+          transition-duration: 0.3s;
+          transition-timing-function: ease-in;
+     }
+
+     #refreshBtn:hover {
+          background-color: rgb(161, 208, 250);
+     }
+}
+
+@media (max-width: 450px) {
+     .header {
+          height: 3rem;
+          width: 100%;
+          background-color: rgb(189, 224, 254);
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+     }
+
+     .search-icon {
+          position: absolute;
+          left: 2rem;
+     }
+     
+     #inpt1 {
+          height: 2rem;
+          width: 15rem;
+          margin: 0rem 1rem;
+          font-size: 1rem;
+          border: 3px solid white;
+          margin-left: 1rem;
+          padding-left: 3rem;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+
+     #submit {
+          position: absolute;
+          top: 0.5rem;
+          left: 14rem;
+          height: 2rem;
+          width: 4rem;
+          border: 3px solid rgb(33, 32, 32);
+          background-color: rgb(33, 32, 32);
+          color: white;
+          font-weight: 600;
+     }
+
+     #refreshBtn {
+          position: absolute;
+          top: 0.5rem;
+          left: 20rem;
+          height: 2rem;
+          width: 4rem;
+          border: 1px solid rgb(33, 32, 32);
+          color: white;
+          font-weight: 600;
+          background-color: rgb(189, 224, 254);
+          transition-duration: 0.3s;
+          transition-timing-function: ease-in;
+     }
+
+     #refreshBtn:hover {
+          background-color: rgb(161, 208, 250);
      }
 }
