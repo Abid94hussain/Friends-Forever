@@ -120,7 +120,7 @@ let submit = document.querySelector("#submit");
 let header = document.querySelector("header");
 
 submit.addEventListener("click", function () {
-     if (inpt.value == "Abid") {
+     if (inpt.value == "Abid" || "Abid ") {
           for (let i = 0; i < 5; i++) {
                let imag = document.createElement("img");
                let images = document.body.appendChild(imag);
