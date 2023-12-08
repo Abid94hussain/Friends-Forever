@@ -49,7 +49,7 @@ const data = {
           name: "Mujammil",
           image: [
                {
-                    img: "./assests/mujammil21.jpg",
+                    img: "./assests/mujammil20.jpg",
                },
                {
                     img: "./assests/mujammil1.jpg",
@@ -108,9 +108,6 @@ const data = {
                {
                     img: "./assests/mujammil19.jpg",
                },
-               {
-                    img: "./assests/mujammil20.jpg",
-               },
           ]
      }
 };
@@ -118,9 +115,11 @@ const data = {
 let inpt = document.querySelector("#inpt1");
 let submit = document.querySelector("#submit");
 let header = document.querySelector("header");
+let h2 = document.querySelector("h2");
 
 submit.addEventListener("click", function () {
-     if (inpt.value == "Abid" || "Abid ") {
+     let name = (inpt.value).trim();
+     if ("Abid" == name) {
           for (let i = 0; i < 5; i++) {
                let imag = document.createElement("img");
                let images = document.body.appendChild(imag);
@@ -129,29 +128,33 @@ submit.addEventListener("click", function () {
           };
      };
 
-     if (inpt.value == "Sazid") {
+     if ("Sazid" == name) {
           for (let i = 0; i < 5; i++) {
                let imag = document.createElement("img");
                let images = document.body.appendChild(imag);
                images.setAttribute("class", "images");
                images.src = data.Sazid.image[i].img;
+
           };
      };
 
-     if (inpt.value == "Mujammil") {
-          for (let i = 0; i < 21; i++) {
+     if ("Mujammil" == name) {
+          for (let i = 0; i < 20; i++) {
                let imag = document.createElement("img");
                let images = document.body.appendChild(imag);
                images.setAttribute("class", "images");
                images.src = data.Mujammil.image[i].img;
           };
      };
+     // else {
+     //      h2.innerText = "404 not found";
+     // }
      inpt.value = "";
 });
 
 const refreshBtn = document.getElementById("refreshBtn");
 
-refreshBtn.addEventListener("click", function(){
+refreshBtn.addEventListener("click", function () {
      window.location.reload();
 });
 
