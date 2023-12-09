@@ -42,3 +42,7 @@ header {
 /* .slider {
      height: 20vh;
 } */
+
+.carousel .item {
+     height: 50vh;
+}
