@@ -296,7 +296,7 @@
      
      #inpt1 {
           height: 2rem;
-          width: 12rem;
+          width: 14rem;
           margin: 0rem 1rem;
           font-size: 1rem;
           border: 3px solid white;
@@ -308,7 +308,7 @@
      #submit {
           position: absolute;
           top: 0.5rem;
-          left: 12rem;
+          left: 13rem;
           height: 2rem;
           width: 4rem;
           border: 3px solid rgb(33, 32, 32);
@@ -320,7 +320,7 @@
      #refreshBtn {
           position: absolute;
           top: 0.5rem;
-          left: 17rem;
+          left: 18rem;
           height: 2rem;
           width: 4rem;
           border: 1px solid rgb(33, 32, 32);
