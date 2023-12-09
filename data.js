@@ -146,9 +146,6 @@ submit.addEventListener("click", function () {
                images.src = data.Mujammil.image[i].img;
           };
      };
-     // else {
-     //      h2.innerText = "404 not found";
-     // }
      inpt.value = "";
 });
 
