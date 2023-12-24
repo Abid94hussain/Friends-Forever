@@ -303,6 +303,9 @@ const data = {
           ]
      }
 };
+for(let da of data.Junaid.image){
+     console.log(da);
+}
 
 let inpt = document.querySelector("#inpt1");
 let submit = document.querySelector("#submit");
